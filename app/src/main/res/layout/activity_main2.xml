@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quesbkg"
+    tools:context="com.example.newu.myapplication.Main2Activity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_centerHorizontal="true"
+        android:text="NEXT" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:text="Who invented the 1st car ?"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:layout_toStartOf="@+id/textView4"
+        android:text="Q.1"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="95dip"
+        android:layout_height="100dip"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/pic" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+
+        android:layout_below="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="46dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="Henry ford"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton6"
+            android:layout_below="@+id/radioButton6"
+            android:layout_marginTop="11dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="Nicholoas Otto"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton7"
+            android:layout_below="@+id/radioButton7"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="Rudolf Diesel"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton5"
+            android:layout_below="@+id/radioButton5"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="Karl Benz"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+</RelativeLayout>
